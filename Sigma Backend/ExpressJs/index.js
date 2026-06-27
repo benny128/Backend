@@ -70,7 +70,7 @@ app.listen(port,()=>{
     res.send("You connect with home path");
  });
 
-// --------------------------------------- PARAMETERS ---------------------------------------
+// --------------------------------------- PARAMETERS---------------------------------------
 
 
 const express=require("express");
@@ -97,3 +97,11 @@ app.get("/:search",(req,res)=>{
     let htmlstr=`<h1>Welcome to search section.</h1>`;
     res.send("no result");
 });
+
+//-------------------------------------
+
+app.get("/:search",(req,res)=>{
+    let {q}=req.query;
+    res.get(`this query gives us : ${q}`);
+});
+

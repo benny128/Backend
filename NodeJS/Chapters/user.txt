@@ -1,0 +1,5 @@
+{
+"username":"dk",
+"Email":"durgeshyadav200451@gmail.com",
+"gender":"male"
+}
